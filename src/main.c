@@ -6,11 +6,11 @@
 /*   By: omoudni <omoudni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:53:09 by omoudni           #+#    #+#             */
-/*   Updated: 2022/05/10 14:35:19 by omoudni          ###   ########.fr       */
+/*   Updated: 2022/05/10 20:56:25 by omoudni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../includes/push_swap.h"
 
 static int	get_number(char **argv)
 {

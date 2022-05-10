@@ -5,47 +5,44 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	//
-IMAX	push_swap.h	/^#define IMAX /;"	d
-IMIN	push_swap.h	/^#define IMIN /;"	d
-PUSH_SWAP_H	push_swap.h	/^# define PUSH_SWAP_H$/;"	d
-add_elem_last	lst_ops.c	/^void add_elem_last(t_list **a, int value)$/;"	f	typeref:typename:void
-add_elem_top	lst_ops.c	/^void add_elem_top(t_list **a, int value)$/;"	f	typeref:typename:void
-bin	push_swap.h	/^    int             bin;$/;"	m	struct:s_list	typeref:typename:int
-create_elem	lst_ops.c	/^t_list *create_elem(int value)$/;"	f	typeref:typename:t_list *
-del_elem_top	lst_ops.c	/^void del_elem_top(t_list **a)$/;"	f	typeref:typename:void
-err_atoi	parsing.c	/^static int err_atoi(int *error)$/;"	f	typeref:typename:int	file:
-fill_tab_3	sort_s_set.c	/^static void fill_tab_3(int **tab, t_list **a)$/;"	f	typeref:typename:void	file:
-free_ll	free.c	/^void    free_ll(t_list **a)$/;"	f	typeref:typename:void
-ft_advanced_atoi	parsing.c	/^int ft_advanced_atoi(const char *str, t_list **a, int *error)$/;"	f	typeref:typename:int
+add_elem_last	lst_ops.c	/^void	add_elem_last(t_list **a, int value)$/;"	f	typeref:typename:void
+add_elem_top	lst_ops.c	/^void	add_elem_top(t_list **a, int value)$/;"	f	typeref:typename:void
+create_elem	lst_ops.c	/^t_list	*create_elem(int value)$/;"	f	typeref:typename:t_list *
+del_elem_top	lst_ops.c	/^void	del_elem_top(t_list **a)$/;"	f	typeref:typename:void
+err_atoi	parsing.c	/^int	err_atoi(int *error)$/;"	f	typeref:typename:int
+fill_tab_3	sort_s_set.c	/^static void	fill_tab_3(int **tab, t_list **a)$/;"	f	typeref:typename:void	file:
+free_ll	free.c	/^void	free_ll(t_list **a)$/;"	f	typeref:typename:void
+free_split	free.c	/^void	free_split(char **splitted)$/;"	f	typeref:typename:void
+ft_advanced_atoi	parsing.c	/^int	ft_advanced_atoi(char *str, t_list **a, int *error)$/;"	f	typeref:typename:int
+ft_char_in_charset	ft_split.c	/^static int	ft_char_in_charset(char const *str, char c)$/;"	f	typeref:typename:int	file:
 ft_check_doubles	parsing_2.c	/^int	ft_check_doubles(t_list **a)$/;"	f	typeref:typename:int
-ft_construct_tab	ranking.c	/^static void	*ft_construct_tab(t_list **a, int **tab, int l_len)$/;"	f	typeref:typename:void *	file:
+ft_construct_tab	ranking.c	/^static void	ft_construct_tab(t_list **a, int **tab, int l_len)$/;"	f	typeref:typename:void	file:
 ft_index_ll	ranking.c	/^static void	ft_index_ll(t_list **a)$/;"	f	typeref:typename:void	file:
 ft_is_digit	parsing.c	/^static int	ft_is_digit(char c)$/;"	f	typeref:typename:int	file:
 ft_is_sign	parsing.c	/^static int	ft_is_sign(char c)$/;"	f	typeref:typename:int	file:
 ft_is_sorted	parsing_2.c	/^int	ft_is_sorted(t_list **a)$/;"	f	typeref:typename:int
-ft_is_space	parsing.c	/^static int	ft_is_space(char c)$/;"	f	typeref:typename:int	file:
-ft_lst_len	lst_ops.c	/^int ft_lst_len(t_list *a)$/;"	f	typeref:typename:int
-ft_sort	sorting.c	/^void    ft_sort(t_list **a, t_list **b, int *ins_nb)$/;"	f	typeref:typename:void
+ft_lst_len	lst_ops.c	/^int	ft_lst_len(t_list *a)$/;"	f	typeref:typename:int
+ft_sort	sorting.c	/^void	ft_sort(t_list **a, t_list **b, int *ins_nb)$/;"	f	typeref:typename:void
 ft_sort_tab	ranking.c	/^static	void	ft_sort_tab(int **tab, int l_len)$/;"	f	typeref:typename:void	file:
+ft_split	ft_split.c	/^char	**ft_split(char const *str, char *charset)$/;"	f	typeref:typename:char **
+ft_strncpy	ft_split.c	/^static char	*ft_strncpy(char *dest, char const *src, unsigned int n)$/;"	f	typeref:typename:char *	file:
 ft_swap	ranking.c	/^static void	ft_swap(int *a, int *b)$/;"	f	typeref:typename:void	file:
-get_bin_len	bin_manip.c	/^int get_bin_len(int n)$/;"	f	typeref:typename:int
-index	push_swap.h	/^    int             index;$/;"	m	struct:s_list	typeref:typename:int
-l_len	push_swap.h	/^    int             l_len;$/;"	m	struct:s_list	typeref:typename:int
-main	main.c	/^int main(int argc, char const *argv[])$/;"	f	typeref:typename:int
-next	push_swap.h	/^    struct s_list   *next;  $/;"	m	struct:s_list	typeref:struct:s_list *
-p	sorting_ops.c	/^void    p(t_list **a, t_list **b, int *ins_nb, int ab)$/;"	f	typeref:typename:void
-parse	parsing.c	/^void    parse(t_list **a, int argc, const char **argv)$/;"	f	typeref:typename:void
-r	sorting_ops.c	/^void    r(t_list **a, int *ins_nb)$/;"	f	typeref:typename:void
-rank	push_swap.h	/^    int             rank;$/;"	m	struct:s_list	typeref:typename:int
+ft_word_count	ft_split.c	/^static int	ft_word_count(char const *str, char *charset)$/;"	f	typeref:typename:int	file:
+get_bin_len	bin_manip.c	/^int	get_bin_len(int n)$/;"	f	typeref:typename:int
+get_number	main.c	/^static int	get_number(char **argv)$/;"	f	typeref:typename:int	file:
+handle_1st_arg	parsing_2.c	/^static void	handle_1st_arg(int j, int *param)$/;"	f	typeref:typename:void	file:
+main	main.c	/^int	main(int argc, char **argv)$/;"	f	typeref:typename:int
+p	sorting_ops.c	/^void	p(t_list **a, t_list **b, int *ins_nb, int ab)$/;"	f	typeref:typename:void
+parse	parsing_2.c	/^void	parse(t_list **a, int argc, char **argv, int j)$/;"	f	typeref:typename:void
+r	sorting_ops.c	/^void	r(t_list **a, int *ins_nb)$/;"	f	typeref:typename:void
 rank_ll	ranking.c	/^void	rank_ll(t_list **a)$/;"	f	typeref:typename:void
-rank_to_ind	sort_s_set.c	/^static int  rank_to_ind(int rank, t_list **a)$/;"	f	typeref:typename:int	file:
-rr	sorting_ops.c	/^void    rr(t_list **a, int *ins_nb)$/;"	f	typeref:typename:void
-s	sorting_ops.c	/^void    s(t_list **a, int *ins_nb)$/;"	f	typeref:typename:void
-s_list	push_swap.h	/^typedef struct s_list$/;"	s
-sort_3	sort_s_set.c	/^void    sort_3(t_list **a, t_list **b, int *ins_nb)$/;"	f	typeref:typename:void
+rank_to_ind	sort_s_set.c	/^static int	rank_to_ind(int rank, t_list **a)$/;"	f	typeref:typename:int	file:
+rr	sorting_ops.c	/^void	rr(t_list **a, int *ins_nb)$/;"	f	typeref:typename:void
+s	sorting_ops.c	/^void	s(t_list **a, int *ins_nb)$/;"	f	typeref:typename:void
+sort_3	sort_s_set.c	/^void	sort_3(t_list **a, t_list **b, int *ins_nb)$/;"	f	typeref:typename:void
 sort_4	sort_s_set.c	/^void	sort_4(t_list **a, t_list **b, int rank, int *ins_nb)$/;"	f	typeref:typename:void
 sort_5	sort_s_set.c	/^void	sort_5(t_list **a, t_list **b, int rank, int *ins_nb)$/;"	f	typeref:typename:void
-sort_b_set	sorting.c	/^void sort_b_set(t_list **a, t_list **b, int *ins_nb)$/;"	f	typeref:typename:void
-sort_s_set	sorting.c	/^void sort_s_set(t_list **a, t_list **b, int *ins_nb)$/;"	f	typeref:typename:void
-t_list	push_swap.h	/^}               t_list;$/;"	t	typeref:struct:s_list
-value	push_swap.h	/^    int             value;$/;"	m	struct:s_list	typeref:typename:int
+sort_b_set	sorting.c	/^void	sort_b_set(t_list **a, t_list **b, int *ins_nb)$/;"	f	typeref:typename:void
+sort_s_set	sorting.c	/^void	sort_s_set(t_list **a, t_list **b, int *ins_nb)$/;"	f	typeref:typename:void
+sort_s_set_4	sorting.c	/^static void	sort_s_set_4(t_list **a, t_list **b, int *ins_nb, int *np)$/;"	f	typeref:typename:void	file:
+sort_s_set_5	sorting.c	/^static void	sort_s_set_5(t_list **a, t_list **b, int *ins_nb, int *np)$/;"	f	typeref:typename:void	file:

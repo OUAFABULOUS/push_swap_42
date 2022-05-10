@@ -6,7 +6,7 @@
 /*   By: omoudni <omoudni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 19:15:18 by omoudni           #+#    #+#             */
-/*   Updated: 2022/05/09 20:37:41 by omoudni          ###   ########.fr       */
+/*   Updated: 2022/05/10 23:58:46 by omoudni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ static	void	ft_sort_tab(int **tab, int l_len)
 	int	min;
 
 	i = 0;
+	if (!*tab)
+		return ;
 	while (i < l_len - 1)
 	{
 		min = (*tab)[i];

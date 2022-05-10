@@ -6,7 +6,7 @@
 /*   By: omoudni <omoudni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 23:47:34 by omoudni           #+#    #+#             */
-/*   Updated: 2022/05/10 14:58:25 by omoudni          ###   ########.fr       */
+/*   Updated: 2022/05/11 00:04:26 by omoudni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,10 +77,12 @@ char	**ft_split(char const *str, char *charset)
 
 	i = 0;
 	j = 0;
-	k = 0;
+	k = -1;
 	word_count = ft_word_count(str, charset);
 	tab = malloc ((word_count + 1) * sizeof(char *));
-	while (k < word_count)
+	if (!tab)
+		return (NULL);
+	while (++k < word_count)
 	{
 		while (str[i] && ft_char_in_charset(charset, str[i]))
 			i++;
@@ -89,7 +91,6 @@ char	**ft_split(char const *str, char *charset)
 			i++;
 		tab[k] = malloc ((i - j + 1) * sizeof(char));
 		tab[k] = ft_strncpy((char *)tab[k], str + j, i - j + 1);
-		k++;
 	}
 	tab[k] = NULL;
 	return (tab);

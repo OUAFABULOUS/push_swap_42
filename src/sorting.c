@@ -6,7 +6,7 @@
 /*   By: omoudni <omoudni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 18:49:22 by omoudni           #+#    #+#             */
-/*   Updated: 2022/05/09 23:09:40 by omoudni          ###   ########.fr       */
+/*   Updated: 2022/05/10 23:38:22 by omoudni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,9 @@ void	sort_s_set(t_list **a, t_list **b, int *ins_nb)
 	if (ft_lst_len(*a) == 3)
 		sort_3(a, b, ins_nb);
 	if (need_push[0] || need_push[1])
-		p(b, a, ins_nb, 1);
+		p(b, a, ins_nb, 0);
 	if (need_push[1])
-		p(b, a, ins_nb, 1);
+		p(b, a, ins_nb, 0);
 }
 
 void	sort_b_set(t_list **a, t_list **b, int *ins_nb)
@@ -84,6 +84,8 @@ void	ft_sort(t_list **a, t_list **b, int *ins_nb)
 	int	l_len;
 
 	l_len = ft_lst_len(*a);
+	if (ft_is_sorted(a))
+		return ;
 	if (l_len <= 5)
 		sort_s_set(a, b, ins_nb);
 	else

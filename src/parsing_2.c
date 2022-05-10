@@ -6,7 +6,7 @@
 /*   By: omoudni <omoudni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:58:53 by omoudni           #+#    #+#             */
-/*   Updated: 2022/05/10 15:11:26 by omoudni          ###   ########.fr       */
+/*   Updated: 2022/05/11 00:02:52 by omoudni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ int	ft_check_doubles(t_list **a)
 			}
 			*a = (*a)->next;
 		}
-	*a = tmp2;
-	*a = (*a)->next;
+		*a = tmp2;
+		*a = (*a)->next;
 	}
 	*a = tmp1;
 	return (0);
@@ -67,11 +67,19 @@ int	ft_is_sorted(t_list **a)
 	}
 }
 
+static void	handle_1st_arg(int j, int *param)
+{
+	if (j)
+		*param = 0;
+	else
+		*param = -1;
+}
+
 void	parse(t_list **a, int argc, char **argv, int j)
 {
 	int	params[2];
 
-	params[0] = -1;
+	handle_1st_arg(j, &(params[0]));
 	params[1] = 0;
 	while (++(params[0]) < argc)
 	{
