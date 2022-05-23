@@ -6,7 +6,7 @@
 /*   By: omoudni <omoudni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:57:21 by omoudni           #+#    #+#             */
-/*   Updated: 2022/05/10 15:11:04 by omoudni          ###   ########.fr       */
+/*   Updated: 2022/05/23 17:01:43 by omoudni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void	parse(t_list **a, int argc, char **argv, int j);
 //---free.c---:
 void	free_ll(t_list **a);
 void	free_split(char **splitted);
+char	**free_split_2(char **splitted, int k);
 
 //---sorting_ops.c---:
 void	s(t_list **a, int *ins_nb);

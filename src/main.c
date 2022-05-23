@@ -6,7 +6,7 @@
 /*   By: omoudni <omoudni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 17:53:09 by omoudni           #+#    #+#             */
-/*   Updated: 2022/05/10 20:56:25 by omoudni          ###   ########.fr       */
+/*   Updated: 2022/05/23 16:39:37 by omoudni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,13 @@ static int	get_number(char **argv)
 	return (ac);
 }
 
+static void	init_param(t_list **a, t_list **b, int *ins_nb)
+{
+	*a = NULL;
+	*b = NULL;
+	*ins_nb = 0;
+}
+
 int	main(int argc, char **argv)
 {
 	t_list	*a;
@@ -32,21 +39,21 @@ int	main(int argc, char **argv)
 	int		tab_ac;
 	int		ins_nb;
 
-	a = NULL;
-	b = NULL;
-	ins_nb = 0;
+	init_param(&a, &b, &ins_nb);
 	if (argc > 1)
 	{
 		if (argc == 2)
 		{
 			tab_argv = ft_split(argv[1], " ");
 			tab_ac = get_number(tab_argv);
-			parse(&a, tab_ac, tab_argv, 0);
+			if (tab_ac)
+				parse(&a, tab_ac, tab_argv, 0);
 			free_split(tab_argv);
 		}
 		else
 			parse(&a, argc, argv, 1);
-		ft_sort(&a, &b, &ins_nb);
+		if (!(argc == 2 && !tab_ac))
+			ft_sort(&a, &b, &ins_nb);
 	}
 	free_ll(&a);
 	free_ll(&b);

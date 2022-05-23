@@ -6,7 +6,7 @@
 /*   By: omoudni <omoudni@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 17:47:53 by omoudni           #+#    #+#             */
-/*   Updated: 2022/05/10 14:38:43 by omoudni          ###   ########.fr       */
+/*   Updated: 2022/05/23 16:59:05 by omoudni          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,22 @@ void	free_split(char **splitted)
 		free(splitted);
 		splitted = NULL;
 	}
+}
+
+char	**free_split_2(char **splitted, int k)
+{
+	int	i;
+
+	i = 0;
+	if (splitted)
+	{
+		while (i < k)
+		{
+			free(splitted[i]);
+			i++;
+		}
+		free(splitted);
+		splitted = NULL;
+	}
+	return (NULL);
 }
